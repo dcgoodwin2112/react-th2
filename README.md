@@ -9,12 +9,12 @@ npm install
 
 Generate the database
 ```bash
-npm prisma db migrate
+npx prisma migrate dev --name init
 ```
 
 Seed the local database with sample data
 ```bash
-npm prisma db seed
+npx prisma db seed
 ```
 
 Start the local development server
