@@ -9,6 +9,15 @@ const prisma = new PrismaClient();
  *     responses:
  *       200:
  *         description: Array of user objects
+ *         content:
+ *           application/json:
+ *             example:
+ *               - id: 'cl6pj4gq600527iznahsmysq0'
+ *                 username: 'User1'
+ *                 email: 'user1@mail.com'
+ *               - id: 'cl6pj4gq600527iznahsmysq0'
+ *                 username: 'User2'
+ *                 email: 'user2@mail.com'
  */
 import type { NextApiRequest, NextApiResponse } from "next";
 

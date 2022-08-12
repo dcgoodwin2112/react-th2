@@ -15,9 +15,15 @@ import type { NextApiRequest, NextApiResponse } from "next";
  *         description: The id of the category term
  *         schema:
  *           type: string
+ *         example: "cl6pj4gph00007iznzb2zn85k"
  *     responses:
  *       200:
  *         description: term
+ *         content:
+ *           application/json:
+ *             example:
+ *               id: "cl6pj4gph00007iznzb2zn85k"
+ *               term: "category1"
  */
 export default async function handler(
   req: NextApiRequest,

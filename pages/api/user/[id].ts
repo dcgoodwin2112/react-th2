@@ -15,9 +15,18 @@ import type { NextApiRequest, NextApiResponse } from "next";
  *         description: The id of the user
  *         schema:
  *           type: string
+ *         example: "cl6pj4gq600527iznahsmysq0"
  *     responses:
  *       200:
  *         description: term
+ *         content:
+ *           application/json:
+ *             example:
+ *               id: "cl6pj4gq600527iznahsmysq0"
+ *               email: "user1@test.com"
+ *               favoriteProducts:
+ *                 - id: "cl6pj4gq200277iznednc6n2w"
+ *                   sku: "12345678"
  */
 export default async function handler(
   req: NextApiRequest,
